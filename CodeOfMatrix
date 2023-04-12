@@ -1,0 +1,19 @@
+#include <iostream> 
+using namespace std;
+
+int main() 
+{
+  const int n = 2, m = 3; // size of the matrix 
+  int mat[n][m] = {{3, 5, 2}, {7, 22, 6}}; // matrix
+  
+  for(int i=0; i<n; i++) // iterate on all rows of the matrix (from 0 to n-1) 
+  {
+    for(int j=0; j<m; j++) // iterate on all columns of the matrix (from 0 to m-1) 
+    {
+        cout << mat[i][j] << '\t'; // print element
+    }
+      cout << endl; // new line 
+   }
+   
+   return 0; 
+}
